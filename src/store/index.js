@@ -1,5 +1,5 @@
-// import React from 'react';
-// import { render } from 'react-dom';
 import CounterContainer from './counter';
 
-export default [CounterContainer];
+export default [
+  CounterContainer
+];
