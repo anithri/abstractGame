@@ -1,26 +1,27 @@
 import PropTypes from "prop-types";
 import data from "./data.json";
 
-class Workers {
+class Cards {
   constructor() {
     this.master = data;
     this.ids = Object.keys(data);
     this.list = Object.values(data);
   }
 
-  find(WorkerId) {
-    return master[WorkerId];
+  find(cardId) {
+    return this.master[cardId];
   }
 
   findEach(arr) {
-    return arr.map(WorkerId => master[WorkerId]);
+    return arr.map(cardId => master[cardId]);
   }
 }
 
-Workers.shape = PropTypes.shape({
+Cards.shape = PropTypes.shape({
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  theme: PropTypes.string.isRequired
+  theme: PropTypes.string,
+  requirements: PropTypes.arrayOf(PropTypes.oneOf(Workers.ids)).isRequired
 });
 
-export default new Workers();
+export default new Cards();
