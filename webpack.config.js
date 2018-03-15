@@ -1,6 +1,14 @@
+const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  resolve: {
+    alias: {
+      styles: path.resolve(__dirname, 'src/styles/'),
+      pages: path.resolve(__dirname, 'src/pages/'),
+      store: path.resolve(__dirname, 'src/store/')
+    }
+  },
   module: {
     rules: [
       {
@@ -21,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
+        exclude: /(node_modules|src\/styles)/,
         use: [
           'style-loader',
           {
@@ -42,7 +50,17 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
+      },
+      {
+        test: /\.css$/,
+        include: /src\/styles/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader'
+        ]
       }
+
 
     ]
   },
