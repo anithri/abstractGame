@@ -1,3 +1,6 @@
+@import '_tachyons.css';
 @import '_utils.css';
 @import '_typography.css';
 
+@import '_palette.css';
+@import '_variables.css';

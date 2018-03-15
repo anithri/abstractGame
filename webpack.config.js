@@ -6,7 +6,8 @@ module.exports = {
     alias: {
       styles: path.resolve(__dirname, 'src/styles/'),
       pages: path.resolve(__dirname, 'src/pages/'),
-      store: path.resolve(__dirname, 'src/store/')
+      store: path.resolve(__dirname, 'src/store/'),
+      models: path.resolve(__dirname, 'src/models/')
     }
   },
   module: {
