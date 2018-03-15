@@ -1,0 +1,22 @@
+.playerRegion {
+  height: 100%;
+  width: 100%;
+  & > header {
+    padding: var(--spacing-extra-small, .25rem);
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--spacing-extra-small, .25rem);
+
+    & > h3 {
+      margin-top: var(--spacing-none);
+      margin-bottom: var(--spacing-none);
+      text-align: center;
+    }
+    & > h3.name {
+      grid-column: 1 / 3;
+    }
+  }
+}
+
