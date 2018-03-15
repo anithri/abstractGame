@@ -1,0 +1,26 @@
+{
+  "playerOne": {
+    "name": "Player One",
+    "id": "playerOne",
+    "theme": "playerOne",
+    "spheres": []
+  },
+  "playerTwo": {
+    "name": "Player Two",
+    "id": "playerTwo",
+    "theme": "playerTwo",
+    "spheres": []
+  },
+  "playerThree": {
+    "name": "Player Three",
+    "id": "playerThree",
+    "theme": "playerThree",
+    "spheres": []
+  },
+  "playerFour": {
+    "name": "Player Four",
+    "id": "playerFour",
+    "theme": "playerFour",
+    "spheres": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "workerRed": {
+    "id": "workerRed",
+    "name": "Red",
+    "theme": "workerRed"
+  },
+  "workerBlue": {
+    "id": "workerBlue",
+    "name": "Blue",
+    "theme": "workerBlue"
+  },
+  "workerGreen": {
+    "id": "workerGreen",
+    "name": "Green",
+    "theme": "workerGreen"
+  },
+  "workerPurple": {
+    "id": "workerPurple",
+    "name": "Purple",
+    "theme": "workerPurple"
+  }
+}
