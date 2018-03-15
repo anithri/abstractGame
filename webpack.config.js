@@ -7,7 +7,8 @@ module.exports = {
       styles: path.resolve(__dirname, 'src/styles/'),
       pages: path.resolve(__dirname, 'src/pages/'),
       store: path.resolve(__dirname, 'src/store/'),
-      models: path.resolve(__dirname, 'src/models/')
+      models: path.resolve(__dirname, 'src/models/'),
+      panes: path.resolve(__dirname, 'src/panes/')
     }
   },
   module: {
