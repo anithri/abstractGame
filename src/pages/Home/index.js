@@ -8,26 +8,25 @@ import DraftingRegion from 'panes/DraftingRegion';
 import MessagesRegion from 'panes/MessagesRegion';
 import ProjectsRegion from 'panes/ProjectsRegion';
 
-const HomePage = ({className, theme}) => {
+const HomePage = ({className}) => {
+  const gridName = styles.defaultGrid;
+  const playerRegions = Players.ids.map(pid => (
+      <PlayerRegion playerId={pid} className={styles[pid]} />
+    )
+  );
 
-  const playerRegions = Players.ids.map(pid => {
-    return (
-      <PlayerRegion playerId={pid} className={styles[pid]} theme={pid} />
-    );
-  });
   return (
-    <main className={cx(styles.home, className, theme)}>
+    <main className={cx(styles.home, gridName, className)}>
       {playerRegions}
       <DraftingRegion className={styles.drafting} />
       <ProjectsRegion className={styles.projects} />
-      <MessagesRegion className={styles.messages}/>
+      <MessagesRegion className={styles.messages} />
     </main>
   );
 };
 
 HomePage.propTypes = {
-  className: PropTypes.string,
-  theme: PropTypes.string
+  className: PropTypes.string
 };
 
 export default HomePage;
