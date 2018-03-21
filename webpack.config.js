@@ -30,6 +30,15 @@ module.exports = {
         ]
       },
       {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      },
+      {
         test: /\.css$/,
         exclude: /(node_modules|src\/styles)/,
         use: [

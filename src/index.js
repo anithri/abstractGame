@@ -11,7 +11,7 @@ import tachyons from 'tachyons-custom/css/tachyons.css';
 const App = () => {
   return (
     <Provider inject={Store}>
-      <Page/>
+      <Page theme='page' />
     </Provider>
   );
 };

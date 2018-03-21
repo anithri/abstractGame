@@ -1,0 +1,36 @@
+.page {
+  //background-color: var(--dark-gray, #eee);
+  background-color: var(--purple, #5e2ca5);
+  background-image: url(../images/textures/cubes.png);
+  & > div {
+    border: thin solid var(--moon-gray);
+  }
+}
+
+.playerOne {
+  background-color: var(--playerOne-bg);
+}
+
+.playerTwo {
+  background-color: var(--playerTwo-bg);
+}
+
+.playerThree {
+  background-color: var(--playerThree-bg);
+}
+
+.playerFour {
+  background-color: var(--playerFour-bg);
+}
+
+.drafting {
+  background-color: var(--drafting-bg);
+}
+
+.projects {
+  background-color: var(--projects-bg);
+}
+
+.messages {
+  background-color: var(--messages-bg);
+}

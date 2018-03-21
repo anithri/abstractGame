@@ -1,6 +1,4 @@
 .home {
-  background-color: var(--light-gray, #eee);
-
   padding: var(--spacing-extra-small, .25rem);
 
   display: grid;
@@ -12,44 +10,43 @@
                       "playerOne projects playerTwo"
                       "playerFour projects playerThree"
                       "playerFour messages playerThree";
-  & > div {
-    border: thin solid var(--moon-gray);
-      border-radius: var(--border-radius-3, .5rem);
+}
 
-  }
+.region {
+  border-radius: var(--border-radius-3, .5rem);
 }
 
 .playerOne {
+  composes: region;
   grid-area: playerOne;
-  background-color: var(--playerOne-bg);
 }
 
 .playerTwo {
+  composes: region;
   grid-area: playerTwo;
-  background-color: var(--playerTwo-bg);
 }
 
 .playerThree {
+  composes: region;
   grid-area: playerThree;
-  background-color: var(--playerThree-bg);
 }
 
 .playerFour {
+  composes: region;
   grid-area: playerFour;
-  background-color: var(--playerFour-bg);
 }
 
 .drafting {
+  composes: region;
   grid-area: drafting;
-  background-color: var(--drafting-bg);
 }
 
 .projects {
+  composes: region;
   grid-area: projects;
-  background-color: var(--projects-bg);
 }
 
 .messages {
+  composes: region;
   grid-area: messages;
-  background-color: var(--messages-bg);
 }

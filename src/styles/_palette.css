@@ -1,9 +1,9 @@
 @import '_colors.css';
 :root {
-  --playerOne-bg: var(--washed-blue);
-  --playerTwo-bg: var(--washed-red);
-  --playerThree-bg: var(--washed-green);
-  --playerFour-bg: var(--washed-yellow);
+  --playerOne-bg: var(--washed-blue-80);
+  --playerTwo-bg: var(--washed-red-80);
+  --playerThree-bg: var(--washed-green-80);
+  --playerFour-bg: var(--washed-yellow-80);
   --drafting-bg: lightcyan;
   --projects-bg: hotpink;
   --messages-bg: coral;
