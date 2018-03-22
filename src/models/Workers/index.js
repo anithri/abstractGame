@@ -9,11 +9,11 @@ class Workers {
   }
 
   find(WorkerId) {
-    return master[WorkerId];
+    return this.master[WorkerId];
   }
 
   findEach(arr) {
-    return arr.map(WorkerId => master[WorkerId]);
+    return arr.map(WorkerId => this.master[WorkerId]);
   }
 }
 

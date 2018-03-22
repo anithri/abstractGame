@@ -4,11 +4,12 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   resolve: {
     alias: {
-      styles: path.resolve(__dirname, 'src/styles/'),
-      pages: path.resolve(__dirname, 'src/pages/'),
-      store: path.resolve(__dirname, 'src/store/'),
+      components: path.resolve(__dirname, 'src/components/'),
       models: path.resolve(__dirname, 'src/models/'),
-      panes: path.resolve(__dirname, 'src/panes/')
+      pages: path.resolve(__dirname, 'src/pages/'),
+      panes: path.resolve(__dirname, 'src/panes/'),
+      store: path.resolve(__dirname, 'src/store/'),
+      styles: path.resolve(__dirname, 'src/styles/'),
     }
   },
   module: {

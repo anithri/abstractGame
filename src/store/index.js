@@ -1,3 +1,9 @@
-import CounterContainer from "./counter";
+import CounterStore from "./counter";
+import DeckStore from './deck';
+import BagContainer from './bag';
 
-export default [CounterContainer];
+export default [
+  BagContainer,
+  DeckStore,
+  CounterStore
+];

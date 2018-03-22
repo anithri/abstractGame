@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import data from "./data.json";
+import Workers from 'models/Workers';
 
 class Cards {
   constructor() {

@@ -1,6 +1,5 @@
 .page {
-  //background-color: var(--dark-gray, #eee);
-  background-color: var(--purple, #5e2ca5);
+//background-color: var(--dark-gray, #eee); background-color: var(--purple, #5e2ca5);
   background-image: url(../images/textures/cubes.png);
   & > div {
     border: thin solid var(--moon-gray);
@@ -23,14 +22,34 @@
   background-color: var(--playerFour-bg);
 }
 
-.drafting {
+.draftingRegion {
   background-color: var(--drafting-bg);
 }
 
-.projects {
+.projectsRegion {
   background-color: var(--projects-bg);
 }
 
-.messages {
+.messagesRegion {
   background-color: var(--messages-bg);
+}
+
+.workerPurple {
+  background-color: var(--purple, #5e2ca5);
+  color: var(--near-white, #f4f4f4);
+}
+
+.workerGreen {
+  background-color: var(--dark-green, #137752);
+  color: var(--near-white, #f4f4f4);
+}
+
+.workerBlue {
+  background-color: var(--dark-blue, #00449e);
+  color: var(--near-white, #f4f4f4);
+}
+
+.workerRed {
+  background-color: var(--dark-red, #e7040f);
+  color: var(--near-white, #f4f4f4);
 }
