@@ -1,5 +1,5 @@
 ---
-to: src/panes/<%= name %>/<%= h.inflection.camelize(name) %>.css
+to: src/components/<%= name %>/<%= h.inflection.camelize(name) %>.css
 ---
 .<%= h.inflection.camelize(name, true) %> {
   height: 100%;

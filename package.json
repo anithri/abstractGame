@@ -8,8 +8,6 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.5",
-    "eslint": "^4.18.2",
-    "eslint-cli": "^1.1.1",
     "lodash": "^4.17.5",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
@@ -31,6 +29,8 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^4.18.2",
+    "eslint-cli": "^1.1.1",
     "css-loader": "^0.28.10",
     "cssnano": "^3.10.0",
     "eslint-config-prettier": "^2.9.0",

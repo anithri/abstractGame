@@ -4,21 +4,29 @@ import styles from "./ProjectsRegion.css";
 import DeckStore from 'store/deck';
 import PropTypes from "prop-types";
 import { Subscribe } from 'unstated';
+import StartGame from 'panes/StartGame';
+import GameStore from 'store/game';
 
 const ProjectsContainer = ({className}) => {
 
   return (
-    <Subscribe to={[DeckStore]}>
+    <Subscribe to={[GameStore, DeckStore]}>
       {
-        (deck) => {
-
-          return (
-            <ProjectsRegion
-              className={className}
-              drawDeck={deck.state.draw}
-              shuffled={deck.state.shuffled}
-            />
-          );
+        (game, deck) => {
+          if (game.state.started) {
+            return (
+              <ProjectsRegion
+                className={className}
+                drawDeck={deck.state.draw}
+                shuffled={deck.state.shuffled}
+                shuffleDeck={deck.shuffleDeck}
+              />
+            );
+          } else {
+            return (
+              <StartGame className={className} />
+            )
+          }
         }
       }
     </Subscribe>
@@ -31,7 +39,14 @@ class ProjectsRegion extends React.Component {
       styles.projectsRegion,
       this.props.className, this.props.theme
     );
-    const {drawDeck, shuffled} = this.props;
+    const {drawDeck, shuffled, shuffleDeck} = this.props;
+    if (!shuffled) {
+      return (
+        <div className={classNames}>
+          <button onClick={shuffleDeck}>Start Game</button>
+        </div>
+      );
+    }
 
     return (
       <div className={classNames}>
@@ -46,7 +61,8 @@ class ProjectsRegion extends React.Component {
 ProjectsRegion.propTypes = {
   className: PropTypes.string,
   drawDeck: PropTypes.arrayOf(PropTypes.string),
-  shuffled: PropTypes.bool
+  shuffled: PropTypes.bool,
+  shuffleDeck: PropTypes.func
 };
 
 export default ProjectsContainer;

@@ -11,16 +11,17 @@ import ProjectsRegion from 'panes/ProjectsRegion';
 const HomePage = ({className}) => {
   const gridName = styles.defaultGrid;
   const playerRegions = Players.ids.map(pid => (
-      <PlayerRegion playerId={pid} className={styles[pid]} key={pid}/>
+      <PlayerRegion playerId={pid} className={styles[pid]} key={pid} />
     )
   );
+
 
   return (
     <main className={cx(styles.home, gridName, className)}>
       {playerRegions}
-      <DraftingRegion className={cx(styles.drafting, 'draftingRegion' )} />
-      <ProjectsRegion className={cx(styles.projects, 'projectsRegion' )} />
-      <MessagesRegion className={cx(styles.messages, 'messagesRegion' )} />
+      <DraftingRegion className={cx(styles.drafting, 'draftingRegion')} />
+      <ProjectsRegion className={cx(styles.projects, 'projectsRegion')} />
+      <MessagesRegion className={cx(styles.messages, 'messagesRegion')} />
     </main>
   );
 };

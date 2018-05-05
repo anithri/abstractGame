@@ -4681,6 +4681,10 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
+lambda@^0.10.3:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/lambda/-/lambda-0.10.3.tgz#808d3aa4ccec2cf59b2e3ea82ca3fb38cf7f0c30"
+
 lazy-req@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/lazy-req/-/lazy-req-1.1.0.tgz#bdaebead30f8d824039ce0ce149d4daa07ba1fac"

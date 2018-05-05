@@ -4,7 +4,7 @@ to: src/components/<%= h.inflection.camelize(name) %>/index.js
 import cx from 'classnames';
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./<%= name %>.css";
+import styles from "./<%= h.inflection.camelize(name) %>.css";
 
 const <%= h.inflection.camelize(name) %> = ({className, children}) => {
   return (

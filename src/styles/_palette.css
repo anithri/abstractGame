@@ -4,7 +4,7 @@
   --playerTwo-bg: var(--washed-red-80);
   --playerThree-bg: var(--washed-green-80);
   --playerFour-bg: var(--washed-yellow-80);
-  --drafting-bg: lightcyan;
-  --projects-bg: hotpink;
-  --messages-bg: coral;
+  --drafting-bg: var(--light-blue-80);
+  --projects-bg: var(--hot-pink-80);
+  --messages-bg: var(--light-purple-80);
 }

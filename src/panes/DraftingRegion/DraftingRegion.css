@@ -48,3 +48,7 @@
   grid-area: projects;
 }
 
+.details {
+  composes: region;
+  grid-area: details;
+}
